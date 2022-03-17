@@ -1,6 +1,6 @@
 [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool WaitNamedPipe(string name, int timeout);
+        private static extern bool WaitNamedPipe(string name, int timeout);//credit or die
         public static bool NamedPipeExist(string pipeName)
         {
             bool result;
